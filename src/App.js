@@ -4,6 +4,7 @@ function App() {
   return (
     <div>
        <button class="btn btn-warning">Warning</button>
+       <button class="btn btn-warning">Warning</button>
     </div>
   );
 }
