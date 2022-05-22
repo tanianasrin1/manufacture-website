@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
@@ -7,6 +7,7 @@ import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Navbar from './Pages/Shared/Navbar';
 import Purchase from './Pages/Purchase/Purchase';
+import Footer from './Pages/Shared/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
          <Route path="*" element={<NotFound></NotFound>}></Route>
        </Routes>
        
+       <Footer></Footer>
     </div>
   );
 }
