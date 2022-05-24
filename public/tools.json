@@ -5,7 +5,8 @@
         "img": "https://i.ibb.co/ngLn3FL/rsz-lep.jpg",
         "description": "Adata 4GB DDR4 2666MHz Laptop RAM",
         "price": 2300,
-        "quantity": 7889
+        "quantity": 7889,
+        "min": 20
 
     },
     {
@@ -14,7 +15,8 @@
         "img": "https://i.ibb.co/j695dnQ/lep2.jpg",
         "description": "Transcend 4GB DDR4 2666MHz Bus SO-DIMM Laptop RAM",
         "price": 2800,
-        "quantity": 9763
+        "quantity": 9763,
+        "min": 22
 
 
     },
@@ -24,7 +26,8 @@
         "img": "https://i.ibb.co/mXLDSmj/lep3.jpg",
         "description": "PATRIOT 4GB DDR4 2666MHZ SO-DIMM Laptop Ram",
         "price": 1300,
-        "quantity": 5437
+        "quantity": 5437,
+        "min": 25
 
 
     },
@@ -34,7 +37,8 @@
         "img": "https://i.ibb.co/wh7NhM3/lep4.png",
         "description": "TRM 4GB DDR-4 2400MHz Laptop RAM",
         "price": 2000,
-        "quantity": 6529
+        "quantity": 6529,
+        "min": 20
 
 
     },
@@ -44,7 +48,8 @@
         "img": "https://i.ibb.co/C7dsbW7/lep5.jpg",
         "description": "DDR4 2666MHz Bus SO-DIMM Laptop",
         "price":1500,
-        "quantity": 4676
+        "quantity": 4676,
+        "min": 18
 
 
     },
@@ -54,7 +59,8 @@
         "img": "https://i.ibb.co/mqB9qWp/lep6.jpg",
         "description":  "TRMs 4GB DDR4 2666MHZ SO-DIMM Laptop Ram",
         "price":1800 ,
-        "quantity": 8764
+        "quantity": 8764,
+        "min": 23
 
 
     }
