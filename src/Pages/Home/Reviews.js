@@ -12,7 +12,7 @@ const Reviews = () => {
     } , [])
     return (
         <div className='py-12'>
-            <h2 className='text-center text-uppercase'>Reviews</h2>
+            <h2 className='text-center text-3xl text-uppercase'>Reviews</h2>
             <div className='reviews py-8'>
                 {
                    reviews.map(review => <Review 

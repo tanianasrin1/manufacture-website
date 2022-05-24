@@ -15,7 +15,7 @@ const Tools = () => {
     },[])
     return (
         <div className='container my-5'>
-        <h2 className='text-center text-uppercase'> Leptop Tools parts</h2>
+        <h2 className='text-center text-uppercase text-3xl'> Leptop Tools parts</h2>
          <div className='toolsItem-container'>
 
         {
