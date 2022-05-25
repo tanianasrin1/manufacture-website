@@ -1,66 +1,66 @@
 [
-    {
-        "_id":1,
+    {   
+        "id": 1, 
         "name": "RAM",
         "img": "https://i.ibb.co/ngLn3FL/rsz-lep.jpg",
         "description": "Adata 4GB DDR4 2666MHz Laptop RAM",
         "price": 2300,
         "quantity": 7889,
-        "min": 20
+        "min": 200
 
     },
-    {
-        "_id":2,
+    { 
+        "id": 2, 
         "name": "DISPLAY",
         "img": "https://i.ibb.co/j695dnQ/lep2.jpg",
         "description": "Transcend 4GB DDR4 2666MHz Bus SO-DIMM Laptop RAM",
         "price": 2800,
         "quantity": 9763,
-        "min": 22
+        "min": 320
 
 
     },
     {
-        "_id":3,
+        "id": 3, 
         "name": "MOTHERBOARD",
         "img": "https://i.ibb.co/mXLDSmj/lep3.jpg",
         "description": "PATRIOT 4GB DDR4 2666MHZ SO-DIMM Laptop Ram",
         "price": 1300,
         "quantity": 5437,
-        "min": 25
+        "min": 450
 
 
     },
     {
-        "_id":4,
+        "id": 4, 
         "name": "BATTERY",
         "img": "https://i.ibb.co/wh7NhM3/lep4.png",
         "description": "TRM 4GB DDR-4 2400MHz Laptop RAM",
         "price": 2000,
         "quantity": 6529,
-        "min": 20
+        "min": 400
 
 
     },
     {
-        "_id":5,
+        "id": 5, 
         "name": "SSD",
         "img": "https://i.ibb.co/C7dsbW7/lep5.jpg",
         "description": "DDR4 2666MHz Bus SO-DIMM Laptop",
         "price":1500,
         "quantity": 4676,
-        "min": 18
+        "min": 308
 
 
     },
     {
-        "_id":6,
+        "id": 6, 
         "name": "CHARGER",
         "img": "https://i.ibb.co/mqB9qWp/lep6.jpg",
         "description":  "TRMs 4GB DDR4 2666MHZ SO-DIMM Laptop Ram",
         "price":1800 ,
         "quantity": 8764,
-        "min": 23
+        "min": 500
 
 
     }
