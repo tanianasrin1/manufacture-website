@@ -19,7 +19,10 @@ const MyPortfolio = () => {
         <li>Mongodb</li>
 
     </ol>
-    
+    Some demo project of mine: <br />
+    <a href="https://independent-service-2bb06.web.app/" target="_blank"><strong>Link1:</strong> https://independent-service-2bb06.web.app/</a>
+    <a href="https://assignment-service-7e7f4.web.app/" target="_blank"><strong>Link2:</strong> https://assignment-service-7e7f4.web.app/</a>
+    <a href="" target="_blank"><strong>Link3:</strong> </a>
   </div>
 </div>
     );

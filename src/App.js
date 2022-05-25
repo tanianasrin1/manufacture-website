@@ -19,7 +19,7 @@ function App() {
 
        <Routes>
          <Route path="/" element={<Home></Home>}></Route>
-         <Route path="/purchase/:purchaseId" element={
+         <Route path="/service/:serviceId" element={
            <RequireAuth>
              <Purchase></Purchase>
            </RequireAuth>
@@ -31,7 +31,7 @@ function App() {
          <Route path="*" element={<NotFound></NotFound>}></Route>
        </Routes>
        
-       {/* <Footer></Footer> */}
+       <Footer></Footer>
     </div>
   );
 }

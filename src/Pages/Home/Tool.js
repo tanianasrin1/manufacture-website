@@ -5,9 +5,7 @@ const Tool = ({tool}) => {
     const { _id, name, img, price, description, quantity, min} = tool;
     const navigate = useNavigate();
 
-    const handleButton = (id) => {
-      navigate(`/purchase/${id}`);
-    }
+   
     return (        
         <div class="card w-96 bg-base-100 shadow-xl">
   <figure class="px-10 pt-10">
@@ -24,7 +22,7 @@ const Tool = ({tool}) => {
       
     
     <div class="card-actions">
-      <button onClick={() => handleButton(_id) } className="btn btn-primary" to = '/purchase'>Buy Now</button>
+      <button onClick={() => navigate(`/service/${_id}`) } className="btn btn-primary">Buy Now</button>
     </div>
   </div>
 </div>
