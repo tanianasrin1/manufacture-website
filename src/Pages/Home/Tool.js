@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 const Tool = ({tool}) => {
     const { _id, name, img, price, description, quantity, min} = tool;
@@ -16,7 +16,6 @@ const Tool = ({tool}) => {
       <h4>Name: {name} </h4>
       <h6> Price : {price} </h6>
       <p>Des: {description} </p>
-      <p>Price: {price} </p>
       <p>Available Quantity: {quantity} </p>
       <p>Minimum Quantity: {min} </p>
       
