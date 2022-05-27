@@ -46,21 +46,21 @@ const MyProfile = () => {
                 <h1>{profiles?.phone}</h1>
                 <img src={profiles?.profilePic} alt="" /> 
              </div> */}
-      <div class="card w-96 bg-base-100 shadow-xl">
+      <div class="card w-96 bg-base-100 shadow-xl my-12 mx-auto">
         <div class="avatar">
           <div class="w-24 rounded-full mx-auto my-3 ring ring-primary ring-offset-base-100 ring-offset-2">
             <img src= {profiles?.profilePic}  />
           </div>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">{user?.displayName}</h2>
+        <div class="card-body text-center">
+          <h2> {user?.displayName}</h2>
           <p>Email: {profiles?.email} </p>
           <p>Address: {profiles?.address} </p>
           <p>Phone: {profiles?.phone} </p>
           
         </div>
       </div>
-      <section className="max-w-2xl mx-auto px-2">
+      <section className="max-w-2xl mx-auto px-2 my-6">
         <h1 className="my-2">Update Profile</h1>
         <form onSubmit={handleSave}>
           <input
