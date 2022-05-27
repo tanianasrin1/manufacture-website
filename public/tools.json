@@ -27,7 +27,7 @@
         "description": "PATRIOT 4GB DDR4 2666MHZ SO-DIMM Laptop Ram",
         "price": 1300,
         "quantity": 5437,
-        "min": 450
+        "min": 200
 
 
     },
@@ -38,7 +38,7 @@
         "description": "TRM 4GB DDR-4 2400MHz Laptop RAM",
         "price": 2000,
         "quantity": 6529,
-        "min": 400
+        "min": 200
 
 
     },
@@ -49,7 +49,7 @@
         "description": "DDR4 2666MHz Bus SO-DIMM Laptop",
         "price":1500,
         "quantity": 4676,
-        "min": 308
+        "min": 208
 
 
     },
@@ -60,7 +60,7 @@
         "description":  "TRMs 4GB DDR4 2666MHZ SO-DIMM Laptop Ram",
         "price":1800 ,
         "quantity": 8764,
-        "min": 500
+        "min": 200
 
 
     }

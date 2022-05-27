@@ -18,6 +18,8 @@ import MyProfile from './Pages/Dashboard/MyProfile';
 import AllUser from './Pages/Dashboard/AllUser';
 import AddTools from './Pages/Dashboard/AddTools';
 import ManageTools from './Pages/Dashboard/ManageTools';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -54,7 +56,7 @@ function App() {
          <Route path="/signup" element={<SignUp></SignUp>}></Route>
          <Route path="*" element={<NotFound></NotFound>}></Route>
        </Routes>
-       
+       <ToastContainer />
        <Footer></Footer>
     </div>
   );
