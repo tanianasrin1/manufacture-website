@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 
-const useToken = user => {
+const useToken = email => {
     const [token, setToken] = useState('');
 
     useEffect( () => {
-        const email = user?.user?.email;
+        // const email = user?.user?.email;
         const currentUser = {email: email,}
         if(email){
            fetch(`http://localhost:5000/user/${email}`, {
@@ -22,7 +22,7 @@ const useToken = user => {
            })
         } 
 
-    } ,[user]);
+    } ,[email]);
     return [token];
 }
 

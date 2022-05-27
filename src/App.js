@@ -20,6 +20,8 @@ import AddTools from './Pages/Dashboard/AddTools';
 import ManageTools from './Pages/Dashboard/ManageTools';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AddProducts from './Pages/Dashboard/AddProducts';
+import RequireAdmin from './Pages/Login/RequireAdmin';
 
 function App() {
   return (
@@ -44,9 +46,27 @@ function App() {
            <Route index element={<MyOrder></MyOrder>}></Route>
            <Route path="review" element={<MyReviews></MyReviews>}></Route>
            <Route path="profile" element={<MyProfile></MyProfile>}></Route>
-           <Route path="allUser" element={<AllUser></AllUser>}></Route>
-           <Route path="addTools" element={<AddTools></AddTools>}></Route>
-           <Route path="manageTools" element={<ManageTools></ManageTools>}></Route>
+           <Route path="allUser" element={
+             <RequireAdmin>
+               <AllUser></AllUser>
+             </RequireAdmin>
+           }></Route>
+           <Route path="addTools" element={
+             <RequireAdmin>
+               <AddTools></AddTools>
+             </RequireAdmin>
+           }></Route>
+           <Route path="manageTools" element={
+             <RequireAdmin>
+               <ManageTools></ManageTools>
+             </RequireAdmin>
+           }></Route>
+           <Route path="addProducts" element={
+             <RequireAdmin>
+               <AddProducts></AddProducts>
+             </RequireAdmin>
+           }></Route>
+           
          </Route>
  
 
