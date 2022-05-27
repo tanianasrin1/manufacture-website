@@ -1,19 +1,21 @@
 import React from 'react';
 import { toast } from "react-toastify";
 
-const UserRow = ({user, index}) => {
+const UserRow = ({user, index, refetch}) => {
   const {email} = user;
   const makeAdmin = () =>{
      fetch(`http://localhost:5000/user/admin/${email}`, {
        method: 'PUT',
        headers: {
-         authorization: `Bearer ${localStorage.getItem('accessToken')}`
+         'authorization': `Bearer ${localStorage.getItem('accessToken')}`
        }
      })
      .then(res => res.json())
      .then(data => {
-       console.log(data);
-       toast.success('Make admin success')
+      if(data.modifiedCount){
+        toast.success('Make admin success')
+        refetch()
+      };
      })
   }
   const removeUser = () =>{
@@ -25,8 +27,10 @@ const UserRow = ({user, index}) => {
      })
      .then(res => res.json())
      .then(data => {
-       console.log(data);
-       toast.success('User delete success')
+       if(data.modifiedCount){
+         toast.success('User delete success');
+         refetch()
+       };
      })
   }
     return (
