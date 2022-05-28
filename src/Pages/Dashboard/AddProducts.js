@@ -53,7 +53,7 @@ const AddProducts = () => {
      
     return (
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input type="text" placeholder='Name'  {...register("name")} />
+        <input type="text" placeholder='Name'  {...register("name")} /> 
         <input type="text"    {...register("img")} />
         <input type="text" placeholder='Description'  {...register("description")} />
         <input type="number" placeholder='price'  {...register("price")} />
