@@ -19,7 +19,7 @@ const Tools = () => {
          <div className='toolsItem-container'>
 
         {
-            tools.map(tool => <Tool
+            tools.slice(-6).map(tool => <Tool
                 key={tool.id}
                 tool = {tool}
             ></Tool>)

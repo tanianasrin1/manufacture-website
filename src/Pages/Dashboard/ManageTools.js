@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import Manage from "./Manage";
 
 const ManageTools = () => {
-  const [products, setProduct] = useState([]);
+  const [orders, setOrders] = useState([]);
   // const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/service")
+    fetch("http://localhost:5000/allbooking")
       .then((res) => res.json())
-      .then((data) => setProduct(data));
+      .then((data) => setOrders(data));
   }, []);
 
   return (
@@ -18,16 +18,18 @@ const ManageTools = () => {
       <thead>
         <tr>
           <th></th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
           <th>Email</th>
-          <th>Job</th>
-          <th>Favorite Color</th>
-          <th>Favorite Color</th>
+          <th>Action</th>
+          
         </tr>
       </thead>
 
       <tbody>
-        {products.map((tool, index) => (
-          <Manage key={tool.id} tool={tool} index={index}></Manage>
+        {orders.map((order, index) => (
+          <Manage key={order._id} order={order} index={index}></Manage>
         ))}
       </tbody>
       </table>

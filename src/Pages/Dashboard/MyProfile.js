@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import { useQuery } from 'react-query';
+import Loading from '../Shared/Loading';
 
 const MyProfile = () => {
-  const [profiles, setProfiles] = useState([]);
+  
   const [user] = useAuthState(auth);
+  const {data: profiles, isLoading, refetch}= useQuery('profiles', () => fetch(`http://localhost:5000/profile/${user?.email}`).then(res => res.json()));
+  if(isLoading){
+      return <Loading></Loading>
+  }
 
-  useEffect(() => {
-    fetch(`http://localhost:5000/profile/${user?.email}`)
-      .then((res) => res.json())
-      .then((data) => setProfiles(data));
-  }, [user?.email]);
-
-  // const navigate = useNavigate();
+  
   const handleSave = (e) => {
     e.preventDefault();
     const education = e.target.education.value;
@@ -33,6 +33,7 @@ const MyProfile = () => {
       .then((data) => {
         if (data.modifiedCount) {
           e.target.reset();
+          refetch();
         }
       });
   };
@@ -53,7 +54,7 @@ const MyProfile = () => {
           </div>
         </div>
         <div class="card-body text-center">
-          <h2> {user?.displayName}</h2>
+          <h2> {profiles?.displayName}</h2>
           <p>Email: {profiles?.email} </p>
           <p>Address: {profiles?.address} </p>
           <p>Phone: {profiles?.phone} </p>

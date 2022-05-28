@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Manage = ({tool, index}) => {
+const Manage = ({order, index}) => {
  const removeProduct = () =>{
 
  }
@@ -8,9 +8,11 @@ const Manage = ({tool, index}) => {
     return (
         <tr>
         <th>{index+1}</th>
-        <td>{tool.name}</td>
-        <td>{tool.price}</td>
-        <td><button onClick={removeProduct} class="btn btn-xs">Remove Product</button></td>
+        <td>{order?.name}</td>
+        <td>{order?.price}</td>
+        <td>{order?.Des}</td>
+        <td>{order?.email}</td>
+        <td><button onClick={removeProduct} class="btn btn-xs">cancel Order</button></td>
         
       </tr>
     );
