@@ -10,10 +10,10 @@ const AddTools = () => {
     }
     return (
         <div>
-            <h2 className="text-2xl">All Users: {products.length} </h2>
+            <h2 className="xl mt-6 text-center text-purple-400 font-bold">All Users: {products.length} </h2>
 
             <div class="overflow-x-auto">
-  <table class="table w-full">
+  <table class="table w-full my-6">
    
     <thead>
       <tr>

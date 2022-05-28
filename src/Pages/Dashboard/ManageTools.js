@@ -18,9 +18,9 @@ const ManageTools = () => {
   // }, []);
 
   return (
-    <div>
-      <h2>Manage All Order</h2>
-      <table class="table w-full">
+    <div className="mt-6">
+      <h2 className="text-center text-purple-400 font-bold">Manage All Order</h2>
+      <table class="table w-full my-6">
       <thead>
         <tr>
           <th></th>

@@ -10,7 +10,7 @@ const AllUser = () => {
     }
     return (
         <div>
-            <h2 className="text-2xl">All Users: {users.length} </h2>
+            <h2 className="xl my-6 text-center text-purple-500 font-bold">All Users: {users.length} </h2>
 
             <div class="overflow-x-auto">
   <table class="table w-full">
@@ -19,9 +19,9 @@ const AllUser = () => {
       <tr>
         <th></th>
         <th>Email</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-        <th>Favorite Color</th>
+        <th>User</th>
+        <th>Action</th>
+        
       </tr>
     </thead>
     <tbody>
