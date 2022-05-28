@@ -22,11 +22,10 @@ const MyPortfolio = () => {
     Some demo project of mine: <br />
     <a href="https://independent-service-2bb06.web.app/" target="_blank"><strong>Link1:</strong> https://independent-service-2bb06.web.app/</a>
     <a href="https://assignment-service-7e7f4.web.app/" target="_blank"><strong>Link2:</strong> https://assignment-service-7e7f4.web.app/</a>
-    <a href="" target="_blank"><strong>Link3:</strong> </a>
+    <a href="https://leptop-tools-bd.web.app/" target="_blank"><strong>Link3: https://leptop-tools-bd.web.app/</strong> </a>
   </div>
 </div>
     );
 };
 
 export default MyPortfolio;
-// Leptop tools in my last project. This project
