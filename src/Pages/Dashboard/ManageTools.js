@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from "react";
 import Manage from "./Manage";
+import { useQuery } from 'react-query';
+import Loading from '../Shared/Loading';
 
 const ManageTools = () => {
-  const [orders, setOrders] = useState([]);
-  // const navigate = useNavigate();
+  const {data: orders, isLoading, refetch}= useQuery('orders', () => fetch('http://localhost:5000/allbooking').then(res => res.json()));
+    if(isLoading){
+        return <Loading></Loading>
+    }
+  // const [orders, setOrders] = useState([]);
+  
 
-  useEffect(() => {
-    fetch("http://localhost:5000/allbooking")
-      .then((res) => res.json())
-      .then((data) => setOrders(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/allbooking")
+  //     .then((res) => res.json())
+  //     .then((data) => setOrders(data));
+  // }, []);
 
   return (
     <div>
@@ -29,7 +35,9 @@ const ManageTools = () => {
 
       <tbody>
         {orders.map((order, index) => (
-          <Manage key={order._id} order={order} index={index}></Manage>
+          <Manage key={order._id} order={order} index={index}
+          refetch={refetch}
+          ></Manage>
         ))}
       </tbody>
       </table>
