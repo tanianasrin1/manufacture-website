@@ -26,32 +26,10 @@ const AddProducts = () => {
                         description: description
                     }
 
-        // const img = data.img[0];
-        // const formData = new FormData();
-        // formData.append('img', img);
-        // const url = `https://api.imgbb.com/1/upload?key=${imgbb}`;
-       
-        // fetch(url, {
-        //     method: 'POST',
-        //     body: formData
-        // })
-        // .then(res => res.json())
-        // .then(result => {
-        //     if(result.success){
-        //         const img = result.data.url;
-        //         console.log(img);
-        //         const service = {
-        //             name: name,
-        //             img: img,
-        //             quantity: quantity,
-        //             min: min,
-        //             price: price,
-        //             description: description
-        //         }
-                // console.log(product);
+     
 
                     // Post to database
-                    fetch('http://localhost:5000/upload', {
+                    fetch('https://evening-citadel-12417.herokuapp.com/upload', {
                         method: 'POST',
                         headers: {
                             "content-type" : "application/json",

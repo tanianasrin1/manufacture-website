@@ -1,19 +1,28 @@
-# Getting Started with Create React App
+# Leptop Tools bd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Private repo link](https://leptop-tools-bd.web.app/).
+click here to create private repo: https://leptop-tools-bd.web.app/
 
 ## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+### `Project Feature`
+- Login sign up
+- using navbar
+- Fixed RequireAuth route
+- add to blogs item
+- fixed 404 page
+- footer route
 
 
+### `Technologies`
+- React
+- Firebase
+- React Router
+- React Firebase Hooks
+- React-Toastify
+- html, css
 
-### `npm test`
 
-
-
-### `npm run build`
 
 

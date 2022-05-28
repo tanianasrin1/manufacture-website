@@ -20,7 +20,7 @@ const MyReviews = () => {
             
 
         }
-       fetch('http://localhost:5000/review',{
+       fetch('https://evening-citadel-12417.herokuapp.com/review',{
            method: 'POST',
            headers: {
                'content-type': 'application/json', 

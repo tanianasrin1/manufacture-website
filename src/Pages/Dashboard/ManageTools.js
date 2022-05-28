@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 
 const ManageTools = () => {
-  const {data: orders, isLoading, refetch}= useQuery('orders', () => fetch('http://localhost:5000/allbooking').then(res => res.json()));
+  const {data: orders, isLoading, refetch}= useQuery('orders', () => fetch('https://evening-citadel-12417.herokuapp.com/allbooking').then(res => res.json()));
     if(isLoading){
         return <Loading></Loading>
     }
@@ -12,7 +12,7 @@ const ManageTools = () => {
   
 
   // useEffect(() => {
-  //   fetch("http://localhost:5000/allbooking")
+  //   fetch("https://evening-citadel-12417.herokuapp.com/allbooking")
   //     .then((res) => res.json())
   //     .then((data) => setOrders(data));
   // }, []);

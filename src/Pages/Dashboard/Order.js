@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const Order = ({order, index, refetch}) => {
 
     const handleDelete = ()=>{
-       fetch(`http://localhost:5000/deleteBooking/${order._id}`, {
+       fetch(`https://evening-citadel-12417.herokuapp.com/deleteBooking/${order._id}`, {
            method: "DELETE"
        })
        .then(res=>res.json())

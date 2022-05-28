@@ -18,7 +18,7 @@ const Purchase = () => {
   const numberRef = useRef('');
 
   useEffect(() => {
-    const url = `http://localhost:5000/singleProduct?id=${serviceId}`;
+    const url = `https://evening-citadel-12417.herokuapp.com/singleProduct?id=${serviceId}`;
 
     axios.get(url).then((data) => setPurchase(data.data));
   }, [serviceId]);
@@ -46,7 +46,7 @@ const Purchase = () => {
        number
     }
 
-    fetch('http://localhost:5000/book', {
+    fetch('https://evening-citadel-12417.herokuapp.com/book', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

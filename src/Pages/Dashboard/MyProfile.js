@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const MyProfile = () => {
   
   const [user] = useAuthState(auth);
-  const {data: profiles, isLoading, refetch}= useQuery('profiles', () => fetch(`http://localhost:5000/profile/${user?.email}`).then(res => res.json()));
+  const {data: profiles, isLoading, refetch}= useQuery('profiles', () => fetch(`https://evening-citadel-12417.herokuapp.com/profile/${user?.email}`).then(res => res.json()));
   if(isLoading){
       return <Loading></Loading>
   }
@@ -22,7 +22,7 @@ const MyProfile = () => {
     const linkdin = e.target.linkdin.value;
     const updateProfile = { education, address, phone, linkdin, profilePic };
 
-    fetch(`http://localhost:5000/updateprofile/${user?.email}`, {
+    fetch(`https://evening-citadel-12417.herokuapp.com/updateprofile/${user?.email}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

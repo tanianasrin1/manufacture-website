@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const Manage = ({order, index, refetch}) => {
  const removeProduct = () =>{
-  fetch(`http://localhost:5000/manageDelete/${order._id}`,{
+  fetch(`https://evening-citadel-12417.herokuapp.com/manageDelete/${order._id}`,{
     method: "DELETE",
     headers: {
       authorization: `Bearer ${localStorage.getItem('accessToken')}`
