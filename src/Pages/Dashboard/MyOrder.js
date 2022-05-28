@@ -17,7 +17,7 @@ const MyOrder = () => {
 
     return (
         <div>
-            <h2>This is myOrder page</h2>
+            <h2 className="text-center text-purple-400 text-2xl my-6">MyOrder Page</h2>
 
             <div class="overflow-x-auto">
   <table class="table w-full">
